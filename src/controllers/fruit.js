@@ -1,3 +1,3 @@
 exports.getFruit = (req, res) => {
-  res.send('get fruit');
+  res.render('fruit');
 };
