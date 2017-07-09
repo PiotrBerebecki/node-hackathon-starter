@@ -1,4 +1,4 @@
 module.exports = {
   uppercase: require('./uppercase'),
-  propercase: require('./propercase'),
+  capitalize: require('./capitalize'),
 };

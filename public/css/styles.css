@@ -25,10 +25,30 @@ a {
   text-decoration: none;
 }
 
+/* ============= $Page layout ============= */
+html {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  /*border: solid 5px green;*/
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  /*border: 20px solid black;*/
+}
+
+main {
+  flex: 1;
+  /*border: 3px solid tomato;*/
+}
+
 /* ============= $Navbar ============= */
 .navbar {
   padding: 1rem;
-  background-color: #777;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
 }
 
 .navbar__list {
@@ -37,7 +57,8 @@ a {
 }
 
 .navbar__link {
-  color: #fff;
+  color: #333;
+  text-transform: uppercase;
 }
 
 .navbar__link--active {
@@ -45,8 +66,11 @@ a {
 }
 
 /* ============= $Footer ============= */
-.footer {
-  padding: 1rem;
-  background-color: #777;
-  color: #fff;
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 61.25em;
+  padding: 1rem 0;
+  color: #333;
 }
