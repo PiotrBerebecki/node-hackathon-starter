@@ -1,1 +1,10 @@
 <h1>{{uppercase 'Fruit'}}</h1>
+
+<ul>
+  {{#each fruit}}
+  <li>
+    <p>{{propercase this.title}}</p>
+    <img src="{{this.thumbnailUrl}}" alt="fruit">
+  </li>
+  {{/each}}
+</ul>

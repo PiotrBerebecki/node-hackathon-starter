@@ -5,7 +5,9 @@
   "license": "MIT",
   "dependencies": {
     "express": "^4.15.3",
-    "express-handlebars": "^3.0.0"
+    "express-handlebars": "^3.0.0",
+    "node-fetch": "next",
+    "request": "^2.81.0"
   },
   "scripts": {
     "start": "node src/index.js",
