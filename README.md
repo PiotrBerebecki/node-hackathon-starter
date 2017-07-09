@@ -48,6 +48,20 @@ https://node-hackathon-starter.herokuapp.com/
   );
   ```
 
+1. Application-wide locals https://gist.github.com/joepie91/c0069ab0e0da40cc7b54b8c2203befe1#application-wide-locals
+
+  ```js
+  // this way
+  app.locals.favourite = 'orange';
+
+  // or this way, this takes precedence over the above
+  app.use((req, res, next) => {
+    res.locals.favourite = 'orange';
+    next();
+  });
+  app.use(routes);
+  ```
+
 1. Style nav links depending on current page
 
   ```js
@@ -70,3 +84,7 @@ https://node-hackathon-starter.herokuapp.com/
     </li>
   </ul>
   ```
+
+  ## Resources
+
+  - https://gist.github.com/joepie91/c0069ab0e0da40cc7b54b8c2203befe1
