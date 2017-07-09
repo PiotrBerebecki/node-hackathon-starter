@@ -9,6 +9,10 @@
   },
   "scripts": {
     "start": "node src/index.js",
-    "dev": "nodemon src/index.js"
+    "dev": "nodemon src/index.js -q",
+    "bsync": "npm run dev & browser-sync start --port 4000 --proxy 'localhost:3000' --files 'src, public' --no-notify"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.12"
   }
 }
