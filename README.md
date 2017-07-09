@@ -56,6 +56,7 @@ https://node-hackathon-starter.herokuapp.com/
   };
   ```
 
+  Note that in handlebars you can access object values using dot notation
   ```html
   <ul class="navbar__list">
     <li class="navbar__item">
