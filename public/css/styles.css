@@ -1,0 +1,36 @@
+/* ============= $Reset ============= */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: tomato;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ============= $Navbar ============= */
+.navbar__list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.navbar__link--active {
+  text-decoration: underline;
+}
