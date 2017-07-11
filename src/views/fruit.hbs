@@ -1,11 +1,12 @@
 <section class="main__container--limited-width">
   <h1 class="main__title">{{uppercase 'Fruit'}}</h1>
-
-  <ul>
+</section>
+<section class="main__container--full-width">
+  <ul class="fruit__list">
     {{#each fruit}}
-    <li>
-      <p>{{capitalize this.title}}</p>
-      <img src="{{this.thumbnailUrl}}" alt="fruit">
+    <li class="fruit__item">
+      <h2 class="fruit__name">{{capitalize this.name}}</h2>
+      <img class="fruit__image" src="{{this.image_url}}" alt="fruit">
     </li>
     {{/each}}
   </ul>

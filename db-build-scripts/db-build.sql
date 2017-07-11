@@ -1,10 +1,10 @@
 BEGIN;
 
 
-DROP TABLE IF EXISTS fruits CASCADE;
+DROP TABLE IF EXISTS fruit CASCADE;
 
 
-CREATE TABLE fruits (
+CREATE TABLE fruit (
   id           SERIAL          PRIMARY KEY,
   name         VARCHAR(64)     NOT NULL,
   image_url    VARCHAR(500)    NOT NULL
@@ -25,7 +25,7 @@ CREATE TABLE fruits (
 -- ('u2', 'Grey', 'Kitty', '$2a$10$XP3ZfjT33e0Qf.ANb8bJGegtVfhv1V7P2xsCry4I8W8p68.hBt/i2', './images/u2_headshot.jpg');
 
 
-INSERT INTO fruits (name, image_url)
+INSERT INTO fruit (name, image_url)
 VALUES
 ('apple', 'https://raw.githubusercontent.com/PiotrBerebecki/node-hackathon-starter/master/db-images/apple.jpg'),
 ('avocado', 'https://raw.githubusercontent.com/PiotrBerebecki/node-hackathon-starter/master/db-images/avocado.jpg'),
