@@ -1,2 +1,14 @@
-node_modules/
+# Dependency directories
+node_modules
+
+# Config
+*.env
+
+# Coverage directory used by tools like istanbul
+coverage
+
+# Logs / temp
+logs
+*.log
+npm-debug.log*
 .DS_Store
