@@ -4,7 +4,7 @@ https://node-hackathon-starter.herokuapp.com/
 
 ## Notes
 
-### Deploy to Heroku
+### Deploying to Heroku
 
 1. Install [heroku-cli](https://devcenter.heroku.com/articles/heroku-cli) if necessary
 
@@ -18,6 +18,8 @@ https://node-hackathon-starter.herokuapp.com/
     heroku create app-name-here --region eu
     git push heroku master
     ```
+
+### Express
 
 1. To serve html files use `static` middleware
 
@@ -84,6 +86,11 @@ https://node-hackathon-starter.herokuapp.com/
       </li>
     </ul>
     ```
+
+### PostgreSQL
+
+
+
 
 ## Resources
 
