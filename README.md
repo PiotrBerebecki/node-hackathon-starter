@@ -1,4 +1,4 @@
-# Node hackathin starter - Express, PostgreSQL & handlebars app
+# Node hackathon starter - Express, PostgreSQL & handlebars app
 
 https://node-hackathon-starter.herokuapp.com/
 
@@ -89,8 +89,10 @@ https://node-hackathon-starter.herokuapp.com/
 
 ### PostgreSQL
 
-
-
+- connect to heroku db using psql
+  `\c postgres://LINK_HERE`
+- run the build script in the same way as if it was a local db
+  `\i ./db-build-scripts/db-build.sql`
 
 ## Resources
 
