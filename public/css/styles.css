@@ -151,7 +151,7 @@ body {
 ***********************************************/
 .fruit__list {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 
@@ -159,21 +159,53 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex-basis: 48%;
+  justify-content: flex-end;
   margin-bottom: 2rem;
   padding: 0.4rem;
   border-radius: 2px;
   box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.15), 0px 0px 10px rgba(0, 0, 0, 0.15);
 }
 
-.fruit__name {
-  margin-bottom: 0.2rem;
-  text-align: center;
-  font-size: 1rem;
+@media (min-width: 30em) {
+  .fruit__item {
+    flex-basis: 48%;
+  }
+}
+
+@media (min-width: 48em) {
+  .fruit__item {
+    flex-basis: 32%;
+  }
 }
 
 .fruit__image {
   display: block;
   width: 100%;
   height: auto;
+}
+
+.fruit__title {
+  margin-top: 0.2rem;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fruit__name {
+  font-size: 1.2rem;
+}
+
+.fruit__fav-btn {
+  fill: white;
+  stroke: #657786;
+  stroke-width: 2px;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.fruit__fav-btn--selected {
+  fill: #e0245e;
+  stroke: #e0245e;
+  transition: all 0.2s;
 }
