@@ -19,9 +19,15 @@ const options = {
   port: params.port,
   database: params.pathname.split('/')[1],
   max: process.env.MAX_CONNECTIONS || 10,
-  user: username,
-  password: password,
   ssl: params.hostname !== 'localhost',
+  idleTimeoutMillis: process.env.NODE_ENV === 'dev' ? 1000 : 30000,
 };
+
+if (username) {
+  options.user = username;
+}
+if (password) {
+  options.password = password;
+}
 
 module.exports = new Pool(options);

@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const connect = require('./../src/database/db-connect.js');
+const connect = require('./../src/models/db-connect.js');
 
 const build = fs.readFileSync(path.join(__dirname, 'db-build.sql'), 'utf8');
 

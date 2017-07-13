@@ -1,3 +1,3 @@
-exports.getHome = (req, res) => {
+exports.get = (req, res) => {
   res.render('home', { activePage: { home: true } });
 };

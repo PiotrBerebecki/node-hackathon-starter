@@ -94,6 +94,12 @@ https://node-hackathon-starter.herokuapp.com/
 - run the build script in the same way as if it was a local db
   `\i ./db-build-scripts/db-build.sql`
 
+### Morgan - logger middleware
+
+```js
+app.use(morgan('dev'));
+```
+
 ## Resources
 
 - https://gist.github.com/joepie91/c0069ab0e0da40cc7b54b8c2203befe1

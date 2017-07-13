@@ -1,6 +1,6 @@
-const get = require('./../db/get');
+const get = require('./../models/get');
 
-exports.getFruit = (req, res) => {
+exports.get = (req, res) => {
   get.fruits((dbErr, fruit) => {
     if (dbErr) {
       return res.render('fruit', {
