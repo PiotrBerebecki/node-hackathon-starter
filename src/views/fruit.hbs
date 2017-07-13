@@ -1,3 +1,9 @@
+{{#if errorMessage}}
+
+  {{> error}}
+
+{{else}}
+
 <section class="main__container--limited-width">
   <h1 class="main__title">{{uppercase 'Fruit'}}</h1>
 </section>
@@ -29,3 +35,5 @@
     }
   });
 </script>
+
+{{/if}}

@@ -10,7 +10,8 @@
     "express-handlebars": "^3.0.0",
     "morgan": "^1.8.2",
     "pg": "^6.4.0",
-    "request": "^2.81.0"
+    "request": "^2.81.0",
+    "serve-favicon": "^2.4.3"
   },
   "scripts": {
     "start": "node src/index.js",

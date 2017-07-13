@@ -209,3 +209,22 @@ body {
   stroke: #e0245e;
   transition: all 0.2s;
 }
+
+/***********************************************
+  $error page
+***********************************************/
+.error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.error__desc {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.error__msg {
+  color: #999;
+}

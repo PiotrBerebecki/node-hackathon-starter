@@ -1,6 +1,7 @@
 const express = require('express');
 const path = require('path');
 const exphbs = require('express-handlebars');
+const favicon = require('serve-favicon');
 const morgan = require('morgan');
 const bodyParser = require('body-parser');
 
@@ -33,6 +34,9 @@ app.engine(
  * Application-level middleware
  *
  */
+// serve favicon
+app.use(favicon(path.join(__dirname, '..', 'public', 'favicon.png')));
+
 // Log requests to the console.
 app.use(morgan('dev'));
 

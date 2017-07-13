@@ -27,6 +27,16 @@ https://node-hackathon-starter.herokuapp.com/
     app.use(express.static(path.join(__dirname, '..', 'public')));
     ```
 
+1. Routing
+
+    ```js
+    // no folder: /foo.mp4
+    // or: /any/number/of/folders/foo.mp4
+    router.get("/:folder*?/:file", (req, res) => {
+      
+    });
+    ```
+
 1. Handlebars setup
 
     There are a number of packages offering handlebars support in express: https://stackoverflow.com/a/35588129/4186037
