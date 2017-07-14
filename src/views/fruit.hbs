@@ -6,6 +6,16 @@
 
 <section class="main__container--limited-width">
   <h1 class="main__title">{{uppercase 'Fruit'}}</h1>
+  <form class="fruit-form" action="/fruit" method="post">
+    <label class="fruit-form__label" for="name">Name</label>
+    <input class="fruit-form__input" type="text" name="name" id="name"
+      placeholder="Enter fruit name" pattern="[A-Za-z]{2,20}"
+      title="At least two letters" required autocomplete="off">
+    <label class="fruit-form__label" for="image_url">Image URL</label>
+    <input class="fruit-form__input" type="text" name="image_url" id="image_url"
+      placeholder="Enter image url" required autocomplete="off">
+    <input class="fruit-form__btn" type="submit" value="Submit"/>
+  </form>
 </section>
 
 <svg style="display: none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -18,8 +28,8 @@
   <ul class="fruit__list" id="js-fruit-list">
     {{#each fruit}}
     <li class="fruit__item">
-      <img class="fruit__image" src="{{this.image_url}}" alt="fruit">
-      <div class="fruit__title">
+      <div class="fruit__image" style="background-image: url({{this.image_url}})"></div>
+      <div class="fruit__info">
         <h2 class="fruit__name">{{capitalize this.name}}</h2>
         <svg class="fruit__fav-btn"><use id="js-fav-btn" xlink:href="#icon-heart"></use></svg>
       </div>

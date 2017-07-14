@@ -10,6 +10,7 @@ const error = require('./error');
  */
 router.get('/', home.get);
 router.get('/fruit', fruit.get);
+router.post('/fruit', fruit.post);
 router.use(error);
 
 module.exports = router;

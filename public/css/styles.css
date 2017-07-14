@@ -149,6 +149,41 @@ body {
 /***********************************************
   $fruit page
 ***********************************************/
+.fruit-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.fruit-form__label {
+  display: none;
+}
+
+.fruit-form__input {
+  margin-top: 0.4rem;
+  width: 100%;
+  padding: 0.3rem;
+  font-size: 0.9rem;
+}
+
+.fruit-form__btn {
+  margin-top: 0.4rem;
+  width: 100%;
+  padding: 0.4rem;
+  background-color: #333;
+  color: white;
+  font-size: 0.9rem;
+  border-radius: 2px;
+}
+
+@media (min-width: 40rem) {
+  .fruit-form__input,
+  .fruit-form__btn {
+    width: 50%;
+  }
+}
+
 .fruit__list {
   display: flex;
   justify-content: space-around;
@@ -160,6 +195,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
+  flex-basis: 100%;
   margin-bottom: 2rem;
   padding: 0.4rem;
   border-radius: 2px;
@@ -179,12 +215,13 @@ body {
 }
 
 .fruit__image {
-  display: block;
   width: 100%;
-  height: auto;
+  height: 16rem;
+  background-size: cover;
+  background-position: center;
 }
 
-.fruit__title {
+.fruit__info {
   margin-top: 0.2rem;
   display: flex;
   width: 100%;

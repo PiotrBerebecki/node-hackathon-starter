@@ -2,7 +2,7 @@ const connect = require('./db-connect');
 
 const get = {};
 
-get.fruits = callback => {
+get.fruit = callback => {
   const sqlQuery = `
     SELECT *
       FROM fruit
@@ -11,7 +11,7 @@ get.fruits = callback => {
 
   connect.query(sqlQuery, (err, response) => {
     if (err) {
-      return callback(err);
+      return callback(new Error('Database error while fetching fruits'));
     }
     callback(null, response.rows);
   });
